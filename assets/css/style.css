@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+body{
+  margin:0;
+  padding:0;
+}
+.lexend-700 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
+  }
+/* Header und navig */
+  header {
+    display: flex;
+   background-color: rgb(178, 188, 156);
+   height: 120px;
+   width: 100%; 
+   position: fixed;
+  
+
+}
+
+.logo {
+  width:33%;
+  padding-top: 15px;
+  
+}
+.logo img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.FHNW {
+  width:33%;
+  font-size: 7vw;
+  color: white;
+  text-align: center;
+  line-height: 110%;
+  
+}
+
+.menu {
+  width:33%;
+ 
+
+  display: flex;
+  justify-content: flex-end;
+  
+  }
+
+ .box {
+  padding-top: 15px; 
+  
+  }
+
+  .box div {
+    border-radius: 5px;
+   height: 5px;
+    width:50px;
+    background-color: white;
+    margin: 10px auto;
+
+  }
+  
+/*erste section */
+
+#hero{
+  top:120px;
+  position: relative;
+  display:grid;
+
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 200px;
+  height: calc(100vh - 80px);
+ 
+}
+
+.leftcol{
+  background-image: url("../images/0275_Lichthof_AH_gross.jpg");
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: top right;
+  grid-column: 1/2;
+  grid-row:1/3;
+  opacity: 0.3;
+}
+
+.centercol  {
+  background-image: url("../images/0275_aussen_Park_AH_gross.jpg");
+  background-size: cover;
+  background-position: top;
+  grid-column: 2/3;
+  grid-row:1/3;
+
+}
+
+.rightcol{
+  background-image: url("../images/0275_Lichthof_Treppe_AH_gross.jpg");
+  background-size: cover;
+  background-position: top left;
+  grid-column: 3/4;
+  grid-row:1/3;
+  opacity: 0.3;
+}
+
+.muttenz {
+grid-column: 2/3;
+grid-row: 2/3;
+text-align: center;
+color: black;
+font-size: 10rem;
+transform: scale(1.4);
+}
+
+.campus {
+ grid-column: 1/2;
+ grid-row: 1/3;
+ color: black;
+ font-size:5rem;
+ writing-mode:sideways-lr;
+ z-index: 5;
+ padding-bottom: 80px;
+ padding-right: 100px;
+ justify-self: end  ;
+}
